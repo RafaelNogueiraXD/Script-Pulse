@@ -1,0 +1,30 @@
+
+    Email do remetente: leapylab@gmail.com
+    Email destinatário: leapylab@gmail.com
+    Arquivo que foi executado: 
+ executa.sh
+    conteudo da mensagem é: Compilação bem-sucedida
+Taxa de compressao: 96.94%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos outros/desconprimi-Image1.TIFF
+Taxa de compressao: 98.72%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos outros/desconprimi-Image1.bmp
+Taxa de compressao: -30.29%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos outros/desconprimi-usaDoc.docx
+Taxa de compressao: -31.82%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos outros/desconprimi-usaMp3.mp3
+Taxa de compressao: -25.78%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos outros/desconprimi-usaWav.wav
+Taxa de compressao: 56.26%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos IMAGENS/desconprimi-debbiewarhol.ppm
+Taxa de compressao: -32.62%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos IMAGENS/desconprimi-EricWSchwartz.ppm
+Taxa de compressao: 49.03%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos IMAGENS/desconprimi-louis.ppm
+Taxa de compressao: -17.28%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos IMAGENS/desconprimi-magazines.ppm
+Taxa de compressao: 92.31%
+Arquivo convertido com sucesso. Resultados salvos nos arquivos IMAGENS/desconprimi-maxresdefault.ppm
+
+    Tempo de execução do arquivo(em segundos): 7  
+    Tempo que o App demorou para Copiar(em segundos): 0     
+    
