@@ -24,30 +24,17 @@ def btn_select_file(ssh=0):
     conteudo_arquivo = open_file_dialog(ssh)
     btn_submit_file(ssh)
     
-def btn_submit_file(ssh=0,outputExterno=None,path=None):
+def btn_submit_file(ssh=0,dicionario=None):
     # caso usuario deseje usar um output de um programa que não foi processado pelo PulseScript(esse app)
-    if path != None:
-        conteudo_arquivo  = {
-            "nomeArquivo": "sem info",
-            "conteudo": leTxt(path),
-            "tempoExecArquivo": "sem info",
-            "tempoApp": "sem informação"
-        }
-    
-    if outputExterno != None:
-        conteudo_arquivo = {
-            "nomeArquivo": "sem info",
-            "conteudo": outputExterno,
-            "tempoExecArquivo": "sem info",
-            "tempoApp": "sem informação"    
-        }
+    if dicionario != None:
+        conteudo_arquivo = criaContent(dicionario)
 
     if conteudo_arquivo != '':
         format_text = escrevendoRelatorio(conteudo_arquivo,dataJson)
         print(format_text)
         escreveTxt(format_text)
-        # envia_email(conteudo=format_text, addr=dataJson)
-        print("\n\nemail 'enviado' hehe \n\n")
+        envia_email(conteudo=format_text, addr=dataJson)
+        # print("\n\nemail 'enviado' hehe \n\n")
         if ssh == 0:
             aviso("success")
         else:

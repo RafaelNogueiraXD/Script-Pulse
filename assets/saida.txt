@@ -1,0 +1,54 @@
+
+    Email do remetente: leapylab@gmail.com
+    Email destinatário: leapylab@gmail.com
+    Arquivo que foi executado: 
+ None
+    conteudo da mensagem é: Model: "Generator"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_2 (InputLayer)           [(None, 128)]        0           []                               
+                                                                                                  
+ input_3 (InputLayer)           [(None, 1)]          0           []                               
+                                                                                                  
+ concatenate (Concatenate)      (None, 129)          0           ['input_2[0][0]',                
+                                                                  'input_3[0][0]']                
+                                                                                                  
+ flatten (Flatten)              (None, 129)          0           ['concatenate[0][0]']            
+                                                                                                  
+ dense_2 (Dense)                (None, 128)          16640       ['flatten[0][0]']                
+                                                                                                  
+ Dense_Generator (Functional)   (None, 215)          88279       ['dense_2[0][0]']                
+                                                                                                  
+==================================================================================================
+Total params: 104,919
+Trainable params: 104,919
+Non-trainable params: 0
+__________________________________________________________________________________________________
+Model: "Discriminator"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_5 (InputLayer)           [(None, 215)]        0           []                               
+                                                                                                  
+ input_6 (InputLayer)           [(None, 1)]          0           []                               
+                                                                                                  
+ concatenate_1 (Concatenate)    (None, 216)          0           ['input_5[0][0]',                
+                                                                  'input_6[0][0]']                
+                                                                                                  
+ flatten_1 (Flatten)            (None, 216)          0           ['concatenate_1[0][0]']          
+                                                                                                  
+ dense_5 (Dense)                (None, 215)          46655       ['flatten_1[0][0]']              
+                                                                                                  
+ Dense_Discriminator (Functiona  (None, 1)           55553       ['dense_5[0][0]']                
+ l)                                                                                               
+                                                                                                  
+==================================================================================================
+Total params: 102,208
+Trainable params: 102,208
+Non-trainable params: 0
+__________________________________________________________________________________________________
+
+    Tempo de execução do arquivo(em segundos): None  
+    Tempo que o App demorou para Copiar(em segundos): None     
+    

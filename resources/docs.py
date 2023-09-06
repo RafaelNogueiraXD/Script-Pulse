@@ -8,6 +8,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from models.docs.funcoesDocs import *
+from resources.text import *
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/documents']
 # The ID of a sample document.
@@ -77,9 +78,9 @@ def escreveDocs():
 
         data = {
             "textConclusion" : conclusao,
-            "textMain" : desenvolvimento,
-            "output" : output,
-            "textIntroduction" : introducao
+            "textMain" : Dev,
+            "output" : Otp,
+            "textIntroduction": INTRO 
         }
         cria_template_doc(service,DOCUMENT_ID, data)
         

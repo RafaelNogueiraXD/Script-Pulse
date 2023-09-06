@@ -25,6 +25,17 @@ if runningType["index"] == 1:
             print("opcao invalida ") 
 elif runningType["index"] == 2:
     print(runningType)
-    # btn_submit_file(ssh=1,outputExterno=input("Escreva o nome do arquivo: "))
+    print(runningType["Conditional2"])
+    
+    dicionario = {
+        "path": str(runningType["text"]),
+        "Conditional1": str(runningType["Conditional1"]),
+        "Conditional2": " " if runningType["Conditional2"] == None else runningType["conditional2"],
+        "texto": None
+    }
+
+    btn_submit_file(1,dicionario)
+    escreveDocs()
+
 else: 
     telaInicial()
